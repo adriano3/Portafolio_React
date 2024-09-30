@@ -1,0 +1,14 @@
+.educacion{
+   margin: auto 30px;
+}
+.items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    
+}
+.foto img{
+    width: 300px;
+    height: 300px;
+}
