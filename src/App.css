@@ -1,8 +1,13 @@
+@import url('./assets/FontRoboto/fonts.css');
 #root {
 
+       
+    }
+    body{
+        font-family: 'MiFuenteLocalRoboto', sans-serif;
+    }
 
 
-}
 
 
 

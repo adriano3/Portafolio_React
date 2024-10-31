@@ -1,18 +1,19 @@
-import { Link } from 'react-router-dom'
-import './Header.css'
-export const Header = (props)=>{
-    return(
-        <header>
-         <nav>
+import { Link } from 'react-scroll';
+import './Header.css';
+
+export const Header = (props) => {
+  return (
+    <header>
+      <nav>
         <ul className="nav-list">
-        <li><Link to="/">{props.about}</Link></li>
-        <li><Link to="/proyectos">{props.proyectos}</Link></li>
-        <li><Link to="/Educacion">{props.educacion}</Link></li>
-        <li><Link to="/habilidades">{props.habilidades}</Link></li>
-        <li><Link to="/Contactame">{props.contacto}</Link></li>
+          <li><Link to="home" smooth={true} duration={500}>{props.home}</Link></li>
+          <li><Link to="aboutme" smooth={true} duration={500}>{props.about}</Link></li>
+          <li><Link to="proyectos" smooth={true} duration={500}>{props.proyectos}</Link></li>
+          <li><Link to="educacion" smooth={true} duration={500}>{props.educacion}</Link></li>
+          <li><Link to="habilidades" smooth={true} duration={500}>{props.habilidades}</Link></li>
+          <li><Link to="contactame" smooth={true} duration={500}>{props.contacto}</Link></li>
         </ul>
       </nav>
     </header>
-    )
-   
-}
+  );
+};

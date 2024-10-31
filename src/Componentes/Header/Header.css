@@ -1,17 +1,13 @@
 header {
-    background-color: #333;
+    background-color: #150322;
     padding: 10px 0;
     position: fixed; /* Fija el header en la parte superior */
     top: 0;
     width: 100%;
     z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra opcional */
+    box-shadow: 0 2px 5px rgba(158, 151, 194, 0.2); /* Sombra opcional */
   }
-  
-  /* Para evitar que el contenido quede oculto por el header */
-  body {
-    padding-top: 60px; /* Ajusta este valor al tamaño del header */
-  }
+ 
   
   /* Navigation list styles */
   .nav-list {
@@ -36,7 +32,7 @@ header {
   }
   
   .nav-list a:hover {
-    color: #ff5733;
+    color: #24eb35;
   }
   
   /* Responsive design */

@@ -1,0 +1,92 @@
+.Titulo h1 {
+    font-size: 3rem; /* Ajusta el tamaño del título */
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0;
+    position: relative;
+    padding-top: 50px;
+    animation: glow 2s infinite alternate; /* Animación de brillo */
+  }
+  
+  .Titulo h1 span {
+    color: #f60a88;
+    animation: bounce 1s infinite; /* Animación de rebote para el span */
+  }
+  
+  @keyframes glow {
+    0% {
+      text-shadow: 0 0 5px #f60a88, 0 0 10px #f60a88, 0 0 20px #f60a88, 0 0 30px #ff33cc, 0 0 40px #ff33cc, 0 0 50px #ff33cc, 0 0 60px #ff33cc;
+    }
+    100% {
+      text-shadow: 0 0 10px #ff33cc, 0 0 20px #ff33cc, 0 0 30px #ff33cc, 0 0 40px #f60a88, 0 0 50px #f60a88, 0 0 60px #f60a88, 0 0 70px #f60a88;
+    }
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+  }
+  .proyectos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .proyecto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    width: calc((100% / 3) - 20px); /* Ajusta según los márgenes */
+    background-color: #007bff;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .proyecto:hover {
+    transform: scale(1.1); /* Efecto de agrandamiento */
+  }
+  .proyecto .img_code {
+    max-width: 150px;
+    height: auto;
+    border-radius: 5px; /* Bordes redondeados para las imágenes */
+  }
+  .proyecto .img_proyect {
+    max-width: 100%;
+    height: 300px;
+    border-radius: 5px; /* Bordes redondeados para las imágenes */
+  }
+  
+  .proyecto p {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .proyecto a {
+    color: #f6f4f4;
+    text-decoration: none;
+    font-size: 1.5rem;
+    border: 2px solid #007bff;
+    border-radius: 50%;
+  }
+  
+  .proyecto a:hover {
+    color: #091827;
+  }

@@ -1,33 +1,45 @@
-
+.Contenido {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  background-color: black;
+  height: 100vh; /* Ajustar al 100% de la altura de la ventana */
+  padding: 0; 
+  margin: 0; 
+}
+.Title h1{
+  color: rgb(255, 165, 0);;
+  margin-bottom: 30px;
+}
+ 
  h1,h2,h3{
     margin: 1px auto;
     
 }
-.Contenido {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-}
+
 .Texto{
     flex:1;
     width:60%;
     margin: 97px 50px;
+    margin-top: 1px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .Perfil img {
-    width: 200px; 
-    height: 300px; 
+    width: 250px; 
+    height: 350px; 
     border-radius: 50%; 
     object-fit: cover; 
-    background-color: rgb(134, 134, 152);
-    
+    background-color: rgb(158, 189, 208);
+    border-color: rgb(0, 122, 204);
+    border: 5px solid rgb(255, 165, 0);;
   }
   .Perfil{
     width: 40%;
     text-align: center;
   }
-  .boton{
+  .btn_cambiar{
     display: block; /* Hace que el botón esté en su propia línea */
     margin: 10px auto; /* Añade espacio y lo centra */
     padding: 8px 16px;
@@ -36,4 +48,45 @@
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  .btn_cambiar:hover{
+    background-color: rgb(255, 165, 0) ;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+  }
+  .btn-descarga:active{
+    transform: translateY(1px);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  }
+  .descargaCv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+  }
+
+  .btn-descarga {
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: rgb(255, 165, 0);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-descarga:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .btn-descarga:active {
+    transform: translateY(1px);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
   }

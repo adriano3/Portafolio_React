@@ -1,0 +1,46 @@
+.habilidades{
+    background-color: #1e1e1e;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+  }
+  
+  .skills-section {
+    width: 45%;
+  }
+  
+  .skills-section h2 {
+    text-align: center;
+  }
+  
+  .skill {
+    margin: 20px 0;
+  }
+  
+  .skill-name {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .progress-bar {
+    background-color: #333;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 5px;
+  }
+  
+  .progress {
+    background-color: #00bfa5;
+    height: 10px;
+    border-radius: 5px;
+  }
