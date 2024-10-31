@@ -101,7 +101,22 @@ export const Contactame = () => {
       </div>
       <div className="card">
         <h3>Información de Contacto</h3>
-        <div className="contact-item"> <FaUser className="contact-icon" /> <p>Adrian Obando Guaman</p> </div> <div className="contact-item"> <FaPhone className="contact-icon" /> <p>+591-65348346</p> </div> <div className="contact-item"> <FaEnvelope className="contact-icon" /> <p>adrianobandoguaman@gmail.com</p> </div> <div className="contact-item"> <FaMapMarkerAlt className="contact-icon" /> <p>Calle Camiri, Cochabamba, Bolivia</p> </div>
+        <div className="contact-item">
+           <FaUser className="contact-icon" />
+         <p>Adrian Obando Guaman</p>
+          </div>
+          <div className="contact-item">
+             <FaPhone className="contact-icon" />
+             <p>+591-65348346</p>
+          </div>
+          <div className="contact-item">
+            <FaEnvelope className="contact-icon" /> 
+             <p>adrianobandoguaman@gmail.com</p>
+          </div> 
+          <div className="contact-item">
+             <FaMapMarkerAlt className="contact-icon" />
+             <p>Calle Camiri, Cochabamba, Bolivia</p> 
+           </div>
       </div>
     </div>
   );

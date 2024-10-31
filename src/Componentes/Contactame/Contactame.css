@@ -27,9 +27,20 @@
     margin: 20px;
     display: flex; flex-direction: column; gap: 15px;
   }
-  .contact-item { display: flex; align-items: center; gap: 10px; }
-  .contact-icon { color: #0e5148; font-size: 24px; }
-  .contact-item p { margin: 0; font-size: 16px; color: #333; }
+  .contact-item { 
+    display: flex; 
+    align-items: center;
+     gap: 10px; 
+    }
+  .contact-icon {
+     color: #0e5148;
+     font-size: 24px;
+     }
+  .contact-item p { 
+    margin: 0; 
+    font-size: 16px; 
+    color: #333;
+ }
   
 .contact-form h2 {
     text-align: center;
