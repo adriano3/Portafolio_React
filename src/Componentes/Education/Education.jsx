@@ -1,5 +1,5 @@
 import diplomado from '../../assets/images/diplomado.png'
-import licenciatura from '../../assets/images/licenciatura.png'
+import licenciatura from '../../assets/images/Licenciatura.png'
 import './Educacion.css'
 
 export const Items_Educacion= (props)=>{
