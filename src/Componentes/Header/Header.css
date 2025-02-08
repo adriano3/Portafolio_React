@@ -1,48 +1,123 @@
+/* Header.css */
+
 header {
-    background-color: #150322;
-    padding: 10px 0;
-    position: fixed; /* Fija el header en la parte superior */
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    box-shadow: 0 2px 5px rgba(158, 151, 194, 0.2); /* Sombra opcional */
+  background-color: #150322;
+  padding: 10px 0;
+  position: fixed; /* Fija el header en la parte superior */
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(158, 151, 194, 0.2); /* Sombra opcional */
+  transition: background-color 0.3s ease;
+}
+.header.scrolled {
+  background-color: rgba(21, 3, 34, 0.9);
+}
+/* Menú y toggle */
+.nav-list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list li {
+  margin: 0 15px;
+  transition: transform 0.3s ease;
+}
+
+.nav-list a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-list a:hover {
+  color: #24eb35;
+  transform: scale(1.1);
+}
+
+.menu-cont .active a {
+ /*  color: #24eb35; /* Color del enlace activo */
+background-color: rgba(90, 9, 241, 0.986);
+padding: 8px;
+}
+@keyframes parpadeo {
+  0%, 100% {
+    opacity: 1;
   }
- 
-  
-  /* Navigation list styles */
-  .nav-list {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    margin: 0;
+  50% {
+    opacity: 0.5;
+  }
+}
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: white;
+  background: none;
+  border: none;
+  padding: 10px;
+  position: fixed; /* Fija el botón toggle en la parte superior */
+  top: 10px;
+  left: 10px;
+  z-index: 1001; /* Asegúrate de que esté por encima del menú */
+  animation: parpadeo 2s infinite;
+}
+.nav-list.show li {
+  animation: fadeIn 0.5s ease forwards;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  header {
     padding: 0;
   }
-  
-  /* List item and link styles */
+
+  .nav-list {
+    display: none; /* Oculta la lista de navegación por defecto en pantallas pequeñas */
+    flex-direction: column;
+    align-items: flex-start;
+    position: fixed; /* Cambia a fixed para que flote sobre el contenido */
+    top: 50px;
+    left: 0;
+    background-color: #150322;
+    box-shadow: 0 2px 5px rgba(158, 151, 194, 0.2); /* Sombra opcional */
+    padding: 20px;
+    width: auto; /* Ajusta el ancho automáticamente */
+    white-space: nowrap;
+    height: auto; /* Altura adecuada */
+    border-radius: 0 0 10px 10px; /* Bordes redondeados en la parte inferior */
+  }
+
+  .nav-list.show {
+    display: flex; /* Muestra la lista de navegación cuando está activa */
+  }
+
   .nav-list li {
-    margin: 0 15px;
+    margin: 15px 0;
   }
-  
-  .nav-list a {
+
+  .menu-toggle {
+    display: block; 
+    background-color: #333; /* Cambia el fondo a un color oscuro */
     color: white;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 500;
-    transition: color 0.3s ease;
   }
-  
-  .nav-list a:hover {
-    color: #24eb35;
+  .navbar {
+    background-color: #f1f1f1; /* Fondo del navbar para mejor visibilidad en móviles */
   }
-  
-  /* Responsive design */
-  @media (max-width: 768px) {
-    .nav-list {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .nav-list li {
-      margin: 10px 0;
-    }
-  }
+}
+

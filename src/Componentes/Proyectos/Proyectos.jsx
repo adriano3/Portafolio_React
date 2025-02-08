@@ -4,7 +4,7 @@ import img_havensoft from '../../assets/images/proyectos/havensoft.png'
 import img_KUSA from '../../assets/images/proyectos/KUSA.png'
 import img_vensoft from '../../assets/images/proyectos/S_Vensoft.png'
 
-import { FaGithub } from 'react-icons/fa6'
+import { FaGithub } from 'react-icons/fa'
 
 export const Proyecto = ({ img1, img2, title, description, githubLink }) => {
    return (
@@ -12,7 +12,7 @@ export const Proyecto = ({ img1, img2, title, description, githubLink }) => {
        <img src={img1} alt="" className='img_code' />
        <img src={img2} alt="" className='img_proyect' />
        <p><span style={{ fontWeight: 'bold' }}>{title}</span> {description}</p>
-       <a href={githubLink}><FaGithub /></a>
+       <a href={githubLink} target="_blank" rel="noreferrer"><FaGithub /></a>
      </div>
    );
  };

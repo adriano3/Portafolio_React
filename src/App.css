@@ -1,11 +1,21 @@
-@import url('./assets/FontRoboto/fonts.css');
-#root {
+/* App.css */
 
-       
-    }
-    body{
-        font-family: 'MiFuenteLocalRoboto', sans-serif;
-    }
+/* Estilos globales */
+body {
+    font-family: 'MiFuenteLocalRoboto', sans-serif;
+  }
+  
+  /* Estilos para tablet */
+  .app-container.tablet {
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  /* Estilos para mobile */
+  .app-container.mobile {
+    max-width: 100%;
+    padding: 10px;
+  }
 
 
 

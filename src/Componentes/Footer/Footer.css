@@ -1,0 +1,19 @@
+.footer {
+    background-color: #0e5148;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .container-footer {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .credits p {
+    margin: 5px 0;
+    color: #ccc;
+    font-size: 14px;
+  }
+  

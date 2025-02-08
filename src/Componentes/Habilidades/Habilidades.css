@@ -1,46 +1,107 @@
-.habilidades{
-    background-color: #1e1e1e;
-    color: white;
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+/* Estilos base */
+.habilidades {
+  background-color: #1e1e1e;
+  color: white;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.skills-section {
+  margin: 20px 0;
+}
+
+.skills-section h2 {
+  text-align: center;
+  background: linear-gradient(135deg, #00bfa5, #00796b);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.skill {
+  margin: 20px 0;
+  background-color: #2e2e2e;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.skill-name {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.progress-bar {
+  background-color: #333;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 5px;
+}
+
+.progress {
+  background-color: #00bfa5;
+  height: 10px;
+  border-radius: 5px;
+  transition: width 0.3s ease;
+}
+
+/* Animaciones */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
   }
-  
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.skill {
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+/* Media Queries para hacer responsiva la vista */
+@media (min-width: 768px) {
   .container {
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
+    flex-direction: row;
   }
-  
+
   .skills-section {
     width: 45%;
   }
-  
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+
   .skills-section h2 {
-    text-align: center;
+    font-size: 1.2em;
   }
-  
-  .skill {
-    margin: 20px 0;
-  }
-  
+
   .skill-name {
-    display: flex;
-    justify-content: space-between;
+    font-size: 1em;
   }
-  
+
   .progress-bar {
-    background-color: #333;
-    border-radius: 5px;
-    overflow: hidden;
-    margin-top: 5px;
+    height: 8px;
   }
-  
+
   .progress {
-    background-color: #00bfa5;
-    height: 10px;
-    border-radius: 5px;
+    height: 8px;
   }
+}
