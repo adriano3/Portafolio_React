@@ -24,7 +24,7 @@
     }
     export const Aboutme =()=>{
         const handleDownload = () => {
-            window.open("../../../public/Documents/CV_ADRIAN_OBANDO_GUAMAN.pdf", "_blank");
+            window.open("/Portafolio_React/src/assets/Documents/CV_ADRIAN_OBANDO_GUAMAN.pdf", "_blank");
         };
 
         return(
