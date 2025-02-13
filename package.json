@@ -2,14 +2,19 @@
   "name": "proyectofinal",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://adriano3.github.io/Portafolio_React/",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "vite build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "gh-pages": "^6.3.0",
+    "portafolio": "^1.0.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-icons": "^5.3.0",

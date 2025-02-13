@@ -21,7 +21,7 @@ function App() {
 
   return (
     <div className={`app-container ${containerClass}`}>
-      <Router>
+      <Router basename='/Portafolio_React'>
         <Header home={"HOME"} about={"SOBRE MI"} proyectos={"PROYECTOS"} educacion={"EDUCACION"} habilidades={"HABILIDADES"} contacto={"CONTACTAME"} />
         <Element name="home"><Home /></Element>
         <Element name="aboutme"><Aboutme /></Element>

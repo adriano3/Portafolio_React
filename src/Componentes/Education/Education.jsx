@@ -9,7 +9,7 @@ export const Items_Educacion= (props)=>{
              <div className='foto'>
                 <img src= {props.foto} alt="" />
              </div>
-            <div>
+            <div className='info'>
                 <h1>{props.titulo}</h1>
                 <h2>{props.institucion}</h2>
                 <p>{props.anio}</p>
