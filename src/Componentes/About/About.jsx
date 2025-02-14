@@ -22,9 +22,20 @@
         
         );
     }
-    export const Aboutme =()=>{
+    export const Aboutme = () => {
         const handleDownload = () => {
-            window.open("/Portafolio_React/src/assets/Documents/CV_ADRIAN_OBANDO_GUAMAN.pdf", "_blank");
+            const url = "/Portafolio_React/src/assets/Documents/CV_ADRIAN_OBANDO_GUAMAN.pdf";
+            fetch(url)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    window.open(url, "_blank");
+                })
+                .catch(() => {
+                    const driveLink = "https://drive.google.com/file/d/1ir9yGejikMaRKAKg3lwYEx8QhzUNRcSV/view";
+                    window.open(driveLink, "_blank");
+                });
         };
 
         return(
